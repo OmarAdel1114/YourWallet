@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+    <div class="d-flex align-items-center gap-3 mb-4">
+        @if (ViewData["UserPicture"] != null)
+        {
+            <img src="@ViewData["UserPicture"]"
+                 class="rounded-circle" width="50" height="50" />
+        }
+        <div>
+            <h4 class="mb-0">Welcome, @ViewData["UserName"]!</h4>
+            <small class="text-muted">@ViewData["UserEmail"]</small>
+        </div>
+    </div>
+    <p>You are now logged in via Google. 🎉</p>
+</div>

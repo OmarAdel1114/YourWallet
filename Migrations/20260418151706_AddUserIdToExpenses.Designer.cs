@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YourWallet.Data;
 
@@ -11,9 +12,11 @@ using YourWallet.Data;
 namespace YourWallet.Migrations
 {
     [DbContext(typeof(YourWalletContext))]
-    partial class YourWalletContextModelSnapshot : ModelSnapshot
+    [Migration("20260418151706_AddUserIdToExpenses")]
+    partial class AddUserIdToExpenses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

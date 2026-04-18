@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using YourWallet.Models.Domain;
 
 namespace YourWallet.Models
 {
@@ -14,7 +15,8 @@ namespace YourWallet.Models
         public string Category { get; set; } = null!;
 
         public DateTime Date { get; set; } = DateTime.Now;
-
+        public int AppUserId { get; set; }         
+        public AppUser AppUser { get; set; } = null!; 
 
     }
 }
