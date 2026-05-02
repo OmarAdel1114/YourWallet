@@ -37,7 +37,7 @@
 
 ## About The Project
 
-![Expenses Screenshot](screenshots/expenses.png)
+![Expenses Screenshot](Screenshots/expenses.png)
 
 YourWallet is a personal finance tracker that helps users monitor and manage their daily expenses. Each user signs in securely with their Google account and gets their own private expense records — no other user can see or touch their data.
 
@@ -59,7 +59,6 @@ YourWallet is a personal finance tracker that helps users monitor and manage the
 [![Entity Framework][ef-shield]][ef-url]
 [![Google OAuth][google-shield]][google-url]
 [![Chart.js][chartjs-shield]][chartjs-url]
-[![Railway][railway-shield]][railway-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,17 +113,17 @@ Visit `http://localhost:5246/Account/Login`
 ## Usage
 
 ### Login with Google
-![Login Screenshot](screenshots/login.png)
+![Login Screenshot](Screenshots/Login.png)
 
 Click **Continue with Google** and sign in with your Google account. On your first login, your account is automatically created in the database.
 
 ### Managing Expenses
-![Expenses Screenshot](screenshots/expenses.png)
+![Expenses Screenshot](Screenshots/expenses.png)
 
 Click **+ Create** to add a new expense with a description, amount, and category. Your expenses are displayed in a table with the option to delete any entry.
 
 ### Expense Overview Chart
-![Chart Screenshot](screenshots/chart.png)
+![Chart Screenshot](Screenshots/Chart.png)
 
 A dynamic pie chart at the bottom of the page groups your expenses by category so you can see where your money is going at a glance.
 
@@ -138,7 +137,7 @@ A dynamic pie chart at the bottom of the page groups your expenses by category s
 - [x] Per-user expense isolation
 - [x] Add and delete expenses
 - [x] Interactive pie chart by category
-- [x] CI/CD deployment via Railway
+- [ ] CI/CD deployment 
 - [ ] Budget limits per category with threshold warnings
 - [ ] Monthly wage tracking with real-time balance deduction
 - [ ] Savings goal setting
